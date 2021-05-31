@@ -22,6 +22,6 @@ app.get("/projects", function (req,res){
   res.render("projects");
 } );
 
-app.listen(3000, function(){
+app.listen(process.env.PORT, function(){
   console.log("server started on port 3000");
 });
